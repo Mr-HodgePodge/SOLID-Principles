@@ -35,6 +35,5 @@ A quick summary for each design principle:
   - Make use of abstractions, where the low level modules will implement the abstraction and the high level modules will consume the abstraction.
   - This follows object oriented design, where implementation details should not be exposed directly.
 
-This project is intended to be used as reference material.
-
+This project is intended to be used as reference material. <br />
 This project is complete and is unlikely to be updated again in future.
