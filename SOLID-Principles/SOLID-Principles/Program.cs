@@ -42,6 +42,7 @@ public abstract class Program
         */
         
         //Solution
+        /*
         var apple = new Solution.Product("Apple", Solution.Colour.Green, Solution.Size.Small);
         var tree = new Solution.Product("Tree", Solution.Colour.Green, Solution.Size.Large);
         var house = new Solution.Product("House", Solution.Colour.Red, Solution.Size.Large);
@@ -62,5 +63,26 @@ public abstract class Program
         {
             Console.WriteLine($" - {p.Name} is Large and Red");
         }
+        */
+        
+        /* Liskov Substitution Principle */
+        // scenario
+        static int Area(Liskov_Substitution.Scenario.Rectangle r) => r.Height * r.Width; 
+        
+        Liskov_Substitution.Scenario.Rectangle rc = new Liskov_Substitution.Scenario.Rectangle(2,3);
+        Liskov_Substitution.Scenario.Square sq = new Liskov_Substitution.Scenario.Square();
+        sq.Width = 4;
+        Liskov_Substitution.Scenario.Rectangle sq2 = new Liskov_Substitution.Scenario.Square();
+        sq2.Width = 4;
+        Console.WriteLine($"{rc} Has Area: {Area(rc)}");
+        Console.WriteLine($"{sq} Has Area: {Area(sq)}");
+        Console.WriteLine($"{sq2} Has Area: {Area(sq2)}");
+        
+        //solution
+        static int AreaSol(Liskov_Substitution.Solution.Rectangle r) => r.Height * r.Width; 
+        
+        Liskov_Substitution.Solution.Rectangle sq3 = new Liskov_Substitution.Solution.Square();
+        sq3.Width = 4;
+        Console.WriteLine($"{sq3} Has Area: {AreaSol(sq3)}");
     }
 }
