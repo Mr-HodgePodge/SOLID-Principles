@@ -7,8 +7,8 @@ namespace SOLID_Principles;
 
 public abstract class Program
 {
-    public static void Main(string[] args)
-    {
+    // public static void Main(string[] args)
+    // {
         /* Single Responsibility Principle */
         /*
         var j = new Solution.Journal();
@@ -67,6 +67,7 @@ public abstract class Program
         
         /* Liskov Substitution Principle */
         // scenario
+        /*
         static int Area(Liskov_Substitution.Scenario.Rectangle r) => r.Height * r.Width; 
         
         Liskov_Substitution.Scenario.Rectangle rc = new Liskov_Substitution.Scenario.Rectangle(2,3);
@@ -77,12 +78,69 @@ public abstract class Program
         Console.WriteLine($"{rc} Has Area: {Area(rc)}");
         Console.WriteLine($"{sq} Has Area: {Area(sq)}");
         Console.WriteLine($"{sq2} Has Area: {Area(sq2)}");
-        
+        */
         //solution
+        /*
         static int AreaSol(Liskov_Substitution.Solution.Rectangle r) => r.Height * r.Width; 
         
         Liskov_Substitution.Solution.Rectangle sq3 = new Liskov_Substitution.Solution.Square();
         sq3.Width = 4;
         Console.WriteLine($"{sq3} Has Area: {AreaSol(sq3)}");
-    }
+        */
+        
+        /* Dependency Inversion Principle */
+        //high-level module
+        public class Research
+        {
+            //scenario
+            /*
+            public Research(Dependency_Inversion.Scenario.Relationships relationships)
+            {
+                var relations = relationships.Relations;
+                foreach (var r in relations.Where(
+                             x=> x.Item1.Name == "John" && 
+                                 x.Item2 == Dependency_Inversion.Scenario.Relationship.Parent))
+                {
+                    Console.WriteLine($"{r.Item1.Name} has a child named: {r.Item3.Name}");
+                }
+            }
+            */
+            
+            //solution
+            public Research(Dependency_Inversion.Solution.IRelationshipBrowser relationshipBrowser)
+            {
+                foreach (var p in relationshipBrowser.FindAllChildrenOf("John"))
+                {
+                    Console.WriteLine($"John has a child named: {p.Name}");
+                }
+            }
+            
+            public static void Main(string[] args)
+            {
+                //scenario
+                /*
+                var parent = new Dependency_Inversion.Scenario.Person { Name = "John" };
+                var childOne = new Dependency_Inversion.Scenario.Person { Name = "Chris" };
+                var childTwo = new Dependency_Inversion.Scenario.Person { Name = "Mary" };
+
+                var relationships = new Dependency_Inversion.Scenario.Relationships();
+                relationships.AddParentAndChild(parent, childOne);
+                relationships.AddParentAndChild(parent, childTwo);
+                
+                new Research(relationships);
+                */
+                
+                //solution
+                var parent = new Dependency_Inversion.Solution.Person { Name = "John" };
+                var childOne = new Dependency_Inversion.Solution.Person { Name = "Chris" };
+                var childTwo = new Dependency_Inversion.Solution.Person { Name = "Mary" };
+
+                var relationships = new Dependency_Inversion.Solution.Relationships();
+                relationships.AddParentAndChild(parent, childOne);
+                relationships.AddParentAndChild(parent, childTwo);
+                
+                new Research(relationships);
+            }
+        }
+    // }
 }
