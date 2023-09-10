@@ -1,0 +1,15 @@
+C:\Users\Dylan\Documents\Coding\C#\SOLID-Principles\SOLID-Principles\SOLID-Principles\SOLID-Principles\bin\Release\net6.0\SOLID-Principles.exe
+C:\Users\Dylan\Documents\Coding\C#\SOLID-Principles\SOLID-Principles\SOLID-Principles\SOLID-Principles\bin\Release\net6.0\SOLID-Principles.deps.json
+C:\Users\Dylan\Documents\Coding\C#\SOLID-Principles\SOLID-Principles\SOLID-Principles\SOLID-Principles\bin\Release\net6.0\SOLID-Principles.runtimeconfig.json
+C:\Users\Dylan\Documents\Coding\C#\SOLID-Principles\SOLID-Principles\SOLID-Principles\SOLID-Principles\bin\Release\net6.0\SOLID-Principles.dll
+C:\Users\Dylan\Documents\Coding\C#\SOLID-Principles\SOLID-Principles\SOLID-Principles\SOLID-Principles\bin\Release\net6.0\SOLID-Principles.pdb
+C:\Users\Dylan\Documents\Coding\C#\SOLID-Principles\SOLID-Principles\SOLID-Principles\SOLID-Principles\obj\Release\net6.0\SOLID-Principles.csproj.AssemblyReference.cache
+C:\Users\Dylan\Documents\Coding\C#\SOLID-Principles\SOLID-Principles\SOLID-Principles\SOLID-Principles\obj\Release\net6.0\SOLID-Principles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dylan\Documents\Coding\C#\SOLID-Principles\SOLID-Principles\SOLID-Principles\SOLID-Principles\obj\Release\net6.0\SOLID-Principles.AssemblyInfoInputs.cache
+C:\Users\Dylan\Documents\Coding\C#\SOLID-Principles\SOLID-Principles\SOLID-Principles\SOLID-Principles\obj\Release\net6.0\SOLID-Principles.AssemblyInfo.cs
+C:\Users\Dylan\Documents\Coding\C#\SOLID-Principles\SOLID-Principles\SOLID-Principles\SOLID-Principles\obj\Release\net6.0\SOLID-Principles.csproj.CoreCompileInputs.cache
+C:\Users\Dylan\Documents\Coding\C#\SOLID-Principles\SOLID-Principles\SOLID-Principles\SOLID-Principles\obj\Release\net6.0\SOLID-Principles.dll
+C:\Users\Dylan\Documents\Coding\C#\SOLID-Principles\SOLID-Principles\SOLID-Principles\SOLID-Principles\obj\Release\net6.0\refint\SOLID-Principles.dll
+C:\Users\Dylan\Documents\Coding\C#\SOLID-Principles\SOLID-Principles\SOLID-Principles\SOLID-Principles\obj\Release\net6.0\SOLID-Principles.pdb
+C:\Users\Dylan\Documents\Coding\C#\SOLID-Principles\SOLID-Principles\SOLID-Principles\SOLID-Principles\obj\Release\net6.0\SOLID-Principles.genruntimeconfig.cache
+C:\Users\Dylan\Documents\Coding\C#\SOLID-Principles\SOLID-Principles\SOLID-Principles\SOLID-Principles\obj\Release\net6.0\ref\SOLID-Principles.dll
