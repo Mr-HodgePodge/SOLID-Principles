@@ -36,4 +36,5 @@ A quick summary for each design principle:
   - This follows object oriented design, where implementation details should not be exposed directly.
 
 This project is intended to be used as reference material.
+
 This project is complete and is unlikely to be updated again in future.
